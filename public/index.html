@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Assignment 16</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1>Server edit and delete</h1>
+        <div id="flex-container">
+
+            <section id="adding">
+                <h3 id="add-item">Add items</h3>
+                <form id="add-item-form" method="post" class="form-class">
+                    <input type="hidden" name="_id" value="-1">
+                    
+                    <p>
+                        <label for="name">Item name: </label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+                    <p>
+                        <label for="name">Item description: </label>
+                        <input type="text" id="description" name="description" required />
+                    </p>
+                    <p id="item-added">
+                        <label>Materials</label>
+                        <a href="#" id="add-item-link">Add materials</a>
+                        <section id="item-boxes"></section>
+
+                    </p>
+                    <p>
+                        <button type="submit">Submit button</button>
+                    </p>
+
+                </form>
+            </section>
+
+            <section id="editing">
+                <h3 id="edit-item">Edit items</h3>
+                <form id="edit-item-form" method="post" class="form-class">
+                    <input type="hidden" name="_id" value="-1">
+
+                    <p>
+                        <label for="name">What item do you want to change?</label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+                    <p>
+                        <label for="description">Updated description</label>
+                        <input type="text" id="description" name="description" required />
+                    </p>
+                    <p id="item-added">
+                        <label>Updated materials</label>
+                        <a href="#" id="edit-item-link">Add materials</a>
+                        <section id="edit-item-boxes"></section>
+                    </p>
+
+                    <a href="#" id="delete-item-link">Delete item</a>
+                    <p>
+                        <button type="submit">Submit button</button>
+                    </p>
+                </form>
+            </section>
+        </div>
+    </body>
+
+
+</html>

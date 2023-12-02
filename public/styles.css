@@ -1,0 +1,12 @@
+body {
+    background-color: aqua;
+}
+
+#adding,
+#editing {
+    margin-top: 15px;
+    padding-left: 5px;
+    border: solid;
+    width: 20%;
+    margin-left: 15px;
+}
